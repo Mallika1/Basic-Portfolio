@@ -1,0 +1,129 @@
+/* CSS file for portfolio.html */
+/* CSS Reset */
+*{
+   padding:0; 
+   margin:0;
+   box-sizing:border-box;
+  }
+  /* sticky footer */
+  html, body {
+   height: 100%;
+ }
+
+body{
+   color:#777777;
+   font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   background:rgb(212, 207, 207);
+   font-size:12px;
+   line-height:1.6em;
+   margin:0;
+   background-image: url("../images/gravel.png");
+   padding-bottom:30px;
+}
+
+header{
+   margin:auto;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   background-color:#fff;
+   border-bottom:2px solid silver;
+}
+
+.container{
+   margin:auto;
+   width:700px;
+}
+.container::after{content:" " ; display:block; clear:both;}
+
+#main-header {
+   background: #4aaaa5;
+   color:white;
+   text-align:center;
+   padding:10px;
+   /* float left for left postion of an element */
+   float:left;
+}
+
+#list-style {
+   padding:10px;
+   list-style:none;
+   /* float right for right postioning for an element */
+   float:right;
+}
+
+#list-style li{
+   display:inline;
+}
+
+#list-style a{
+  text-decoration:none;
+  padding-right:12px;
+}
+
+ul li {
+   border-right:1px solid #ccc;
+   padding:0.5em;
+}
+
+ul li:last-child{
+   border:0;
+} 
+
+#main-bio{
+   margin:auto;
+   margin-top: 10px;
+   width:700px;
+   background:#fff;
+   border:2px solid #dddddd;
+  /* use overflow auto when need a side scroll bar to stop the content overflow. */
+   overflow:auto;
+}
+/* clearing float is necessary for the next element not to flloat */
+#main-bio::after{content:" " ; display:block; clear:both;}
+
+#style_aboutme{  
+   padding-bottom:10px; 
+   margin-top:10px; 
+   margin-right:25px;
+   margin-bottom:10px;
+   font-size:18px;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   border-bottom:1px solid #ccc;
+   color:#4aaaa5;
+}
+.image{
+   margin-top:10px; 
+   margin-right:25px;
+   margin-bottom:10px;
+}
+
+#footer{
+   clear:both;
+   height: 30px;
+   margin-top: -50x;   
+   border-top:4px solid #4aaaa5;
+   padding:10px; 
+   text-align:center;
+   background:grey;
+   color:white;
+}
+
+#wrapper
+{
+   margin-left:20px;
+   width:600px;
+}
+/* sticky footer */
+.bodycontainer{
+   min-height: 100%;
+}
+/* pseudo class */
+.image:hover{
+   opacity:0.5;
+}
+
+#list-style  a:hover { 
+   color: blue; 
+   font-style: italic;
+   font-weight:bold;
+}
+ 

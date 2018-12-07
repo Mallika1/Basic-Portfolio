@@ -1,0 +1,146 @@
+/* CSS file for index.html */
+/* CSS Reset */
+*{
+   padding:0; 
+   margin:0;
+   /* box-sizing property allows us to include the padding and border in an element's total width and height. */
+   box-sizing:border-box;
+  }
+
+  /* sticky footer */
+  html, body {
+   height: 100%;
+ }
+/* body style */
+body{
+   color:#777777;
+   font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   background:rgb(212, 207, 207);
+   font-size:16px;
+   line-height:1.6em;
+   margin:0;
+   background-image: url("../images/gravel.png");
+}
+
+header{
+   margin:auto;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   background-color:#fff;
+   border-bottom:2px solid silver;
+}
+
+.container{
+   margin:auto;
+   width:960px;
+}
+
+/* clearing float so that next element gets its position at correct place */
+.container::after{content:" " ; display:block; clear:both;}
+
+#main-header {
+   background: #4aaaa5;
+   color:white;
+   text-align:center;
+   padding:10px;
+   /* to place an element on left */
+   float:left;
+      
+}
+
+#list-style 
+{
+   padding:10px;
+   list-style:none;
+   /* to place an element on left */
+   float:right;
+}
+
+#list-style li
+{
+   /* displays the list items in line */
+   display:inline;
+}
+
+#list-style a
+{
+  text-decoration:none;
+  color:grey;
+  padding-right:12px;
+}
+
+ul li 
+{
+   border-right:1px solid #ccc;
+   padding:0.5em;
+}
+
+ul li:last-child{
+   border:0;
+} 
+
+#main-bio
+{
+   margin:auto;
+   margin-top: 20px;
+   width:960px;
+   background: #ffffff;
+   border:2px solid #dddddd;
+   overflow:auto;
+   /* sticky footer */
+   padding: 20px;
+   padding-bottom: 50px;
+}
+
+#main-bio::after{content:" " ; display:block; clear:both;}
+
+#style_aboutme
+{  
+   padding-top:20px; 
+   padding-bottom:20px;
+   font-size:25px;
+   font-family: 'Georgia', Times, Times New Roman, serif;
+   border-bottom:1px solid #ccc;
+   color:#4aaaa5;
+}
+
+#bio-image{
+   margin-top:20px; 
+   margin-right:10px;   
+   float:left
+}
+
+.para{
+   margin-top:15px;   
+}
+
+#footer{
+   clear:both;
+   /* sticky footer */
+   height: 50px;
+   margin-top: -50px;  
+   border-top:8px solid #4aaaa5;
+   padding:10px; 
+   text-align:center;
+   background:grey;
+   color:white;
+}
+
+#wrapper
+{
+   margin-left:20px;
+}
+/* sticky footer */
+.bodycontainer{
+   min-height: 100%;
+   
+}
+/* pseudo class in use */
+#list-style  a:hover { 
+   color: blue; 
+   font-style: italic;
+   font-weight:bold;
+}
+/* pseudo class in use */
+#bio-image:hover{
+   opacity:0.5;
+}
